@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&family=Source+Sans+Pro:wght@300&family=Trocchi&display=swap');
+.main {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+  max-width: 1800px;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-image: url('../public/background.jpg');
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.wholeBody {
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+
+/* Glassmorphism card effect */
+.card {
+  backdrop-filter: blur(5px) saturate(150%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.045);
+
+  /* border: 1px solid rgba(209, 213, 219, 0.05); */
+}
+.card-borderlight {
+  backdrop-filter: blur(5px) saturate(150%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.045);
+
+  /* border: 1px solid rgba(209, 213, 219, 0.087); */
+}
+.card-borderLess {
+  backdrop-filter: blur(5px) saturate(200%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.045);
+}
+.card2 {
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.045);
+}
+
+/*---------------------------------------------*/
+.wholeBody {
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+.verticalNav {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+  position: relative;
+}
+
+.horizontalNav {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  padding: 0rem 3rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.vertical-nav-icons {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+  position: absolute;
+  top: 20rem;
+}
+.logo {
+  width: 5rem;
+  height: auto;
+  text-align: left;
+  padding: 0;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+.extra-space {
+  margin-bottom: 26rem;
+}
+/* .extra-space-right {
+  margin-right: 0rem;
+} */
+.resize {
+  text-align: center;
+  margin: 0 auto;
+  width: 40px;
+  height: auto;
+}
+/* .learnMoreNav {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+} */
+.Logo-Name {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "raleway";
+}
+.btn-wallet {
+  display: block;
+  width: 12rem;
+  height: 2.5rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 13px;
+  border: none;
+}
+.btn-wallet:hover{
+  background-color: #FF69B4;
+}
+.ConnectWalletFont {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 5rem;
+}
+.home-desc {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: left;
+}
+.home-head {
+  font-size: 2rem;
+  font-weight: 1000;
+  letter-spacing: 0.1;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+.home-left {
+  margin-left: 3rem;
+}
+.bitcoin {
+  width: 30rem;
+  height: auto;
+  text-align: center;
+}
+.btn-align {
+  text-align: left;
+  margin: 2rem auto 1rem 0;
+}
+.resize-btn {
+  width: 15rem;
+  height: 3rem;
+  color: #fff;
+  backdrop-filter: blur(10px) saturate(200%);
+  -webkit-backdrop-filter: blur(10px) saturate(200%);
+  background-color: rgba(255, 255, 255, 0.161);
+  border-radius: 13px;
+  font-size: 1rem;
+}
+.twitter {
+  text-align: left;
+  width: 4rem;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.telegram {
+  text-align: left;
+  width: 4rem;
+  height: auto;
+  margin-top: 4rem;
+}
+.chain {
+  margin: -3rem auto 10rem auto;
+  text-align: center;
+}
+
+.all-logo {
+  width: 20rem;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.supported {
+  font-family: "raley", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  /* font-weight: 2000; */
+  margin-top: 1rem;
+}
+.card-about {
+  text-align: center;
+  margin: 5rem auto;
+}
+.card-head {
+  font-family: "raley", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.card-para {
+  font-size: 1.5rem;
+  font-family: "inter", sans-serif;
+}
+.card-outline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 110rem;
+  gap: 3rem;
+  margin: 0 3rem 9rem 3rem;
+}
+.card-feature {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+}
+.card-feature:hover {
+  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+}
+.img-proposals,
+.img-vote,
+.img-launch {
+  margin: 2rem auto 0 auto;
+}
+.proposals,
+.vote,
+.launch {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.proposals-des,
+.vote-des,
+.launch-des {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 5px;
+  line-height: 2;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+}
+.social-footer {
+  margin: 0 3rem 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  max-width: 10rem;
+  gap: 1.5rem;
+}
+.copyright {
+  font-size: 1rem;
+}
+.twitter-footer,
+.telegram-footer,
+.github-footer,
+.discord-footer {
+  width: 30px;
+  height: auto;
+}
+
+/**-----------##############-----------------*/
+.float {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.options-outline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  max-width: 100%;
+  margin: 10rem 3rem 5rem 3rem;
+}
+.option {
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(209, 213, 219, 0.05);
+  display: block;
+}
+.option:hover {
+  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+}
+.addProposal {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.option-para {
+  font-family: "raleway", sans-serif;
+  font-size: 1rem;
+  line-height:2;
+  margin: 2rem auto 2rem 2rem;
+  text-align: left;
+}
+.btn-proposal {
+  display: block;
+  border: 1px solid #b4ff69;
+  color: #b4ff69;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+  font-family: "raleway", sans-serif;
+  font-size: 1.1rem;
+  line-height: 0.5;
+  margin: 0 auto 3rem auto;
+  letter-spacing: 1px;
+}
+.btn-proposal:hover {
+  background-color: #fff;
+  color: #000;
+}
+.headingContainer{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 1px;
+}
+.headingLine{
+  border: 1px solid #fff;
+  width: 15rem;
+}
+.holdingHeading{
+  font-size: 5rem;
+  line-height: 0.5;
+}
+.mintBtn{
+  border: none;
+  border-radius: 12px;
+  color: #000;
+  background-color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  line-height: 0.5;
+  margin: 2rem auto;
+  text-align: center;
+}
+.mintBtn:hover{
+  background-color: #FF69B4;
+}
+.HoldingValue{
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2;
+  margin-top: -2rem;
+}
+.tokenRate{
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2;
+}
+
+.inputTokenToBuy{
+  width: 15rem;
+  padding: 1rem ;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.sectionYourHolding{
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.balanceNum{
+  font-size: 5rem;
+  padding: 0 1rem;
+  color: #b4ff69;
+}
+.contractInfo{
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.contactAdd,.decimals{
+  font-size: 1.1rem;
+  line-height: 2;
+  text-align: center;
+}
+.decimals{
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+.contractColor{
+  color: #b4ff69;
+  font-size: 1.2rem;
+}
+/*-------------------------------------------------------------------------*/
+.CreatePropHeading{
+  font-size: 3rem;
+}
+.sectionCreateProposal{
+  margin: 7rem auto;
+  text-align: center;
+}
+.NoTokenDes{
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2;
+  background-color: red;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+.CreatePropInputcontainer{
+  margin: 2rem auto;
+  text-align: center;
+}
+.DaoTreasury{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.balanceTreasury{
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  color: #b4ff69;
+}
+.CreatePropLabel{
+  margin: 4rem auto 2rem auto;
+  font-size: 2rem;
+  display: block;
+}
+/*-------------------------------------------------------------------------*/
+.SectionVote{
+  text-align: center;
+  margin: 3rem auto 10rem auto;
+}
+/*-------------------------------------------------------------------------*/
+.section-ongoingSale {
+  text-align: center;
+  margin: 0 auto;
+}
+.TokenSaleHead {
+  font-family: "raleway", sans-serif;
+  font-size: 5rem;
+  margin: 0 auto 4rem auto;
+  font-weight: 600;
+  text-align: center;
+}
+.sale {
+  display: inline-grid;
+  /* grid-template-columns: repeat(6, minmax(10rem, auto)); */
+  grid-auto-flow: column;
+  text-align: center;
+  align-items: start;
+  justify-content: space-evenly;
+  margin: 0 auto 10rem auto;
+  padding: 3rem 1rem 0 1rem;
+  gap: 2rem;
+  border-radius: 15px;
+}
+.Token1 {
+  width: 10rem;
+  height: auto;
+  margin-left: 1rem;
+}
+.Name-Raise {
+  display: inline-grid;
+  /* grid-template-rows: repeat(2, minmax(5rem, auto)); */
+  grid-auto-flow: row;
+  justify-self: start;
+  justify-items: start;
+  align-items: space-between;
+  align-self: space-between;
+  gap: 4rem;
+}
+.token-name {
+  display: inline-grid;
+  /* grid-template-columns: repeat(2, minmax(10rem, auto)); */
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.raise-amount {
+  display: inline-grid;
+  /* grid-template-rows: repeat(2, minmax(5rem, auto)); */
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: end;
+  align-content: end;
+  gap: 0.5rem;
+}
+.tag-2 {
+  display: inline-grid;
+  /* grid-template-columns: repeat(2, minmax(10rem, auto)); */
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.tag-ath {
+  display: inline-grid;
+  /* grid-template-rows: repeat(2, minmax(5rem, auto)); */
+  grid-auto-flow: row;
+  justify-self: start;
+  justify-items: start;
+  align-items: space-between;
+  align-self: space-between;
+  gap: 5rem;
+}
+.ath-amount {
+  display: inline-grid;
+  /* grid-template-rows: repeat(2, minmax(5rem, auto)); */
+  grid-auto-flow: row;
+  justify-content: space-between;
+  align-items: end;
+  gap: 0.5rem;
+}
+.point {
+  width: 20px;
+  height: auto;
+}
+
+.star {
+  width: 20px;
+  height: auto;
+}
+.sale-btn {
+  display: block;
+  border: 1px solid white;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-family: "raleway", sans-serif;
+  font-size: 1.5rem;
+  margin: 0 auto 3rem auto;
+}
+.sale-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.recommend-btn {
+  display: inline-grid;
+  /* grid-template-rows: repeat(2, minmax(5rem, auto)); */
+  grid-auto-flow: row;
+  justify-self: start;
+  justify-items: start;
+  align-items: space-between;
+  align-self: space-between;
+  gap: 5rem;
+}
+.name {
+  font-family: "raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: oblique;
+}
+.tag {
+  backdrop-filter: blur(5px) saturate(100%);
+  -webkit-backdrop-filter: blur(5px) saturate(100%);
+  background-color: rgba(238, 146, 70, 0.674);
+  border: 1px solid rgba(0, 0, 0, 0.689);
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.raise,
+.ath {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.raise-amount,
+.ath-amnt {
+  font-style: bold;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.extra-gap {
+  padding: 0 15rem;
+}
+.total-supply-img,
+.star-recommend {
+  display: inline-grid;
+  /* grid-template-rows: repeat(2, minmax(5rem, auto)); */
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+.total-supply,
+.recommend-txt {
+  font-size: 1.8rem;
+}
+

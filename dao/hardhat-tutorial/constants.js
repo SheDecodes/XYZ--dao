@@ -1,0 +1,2 @@
+const XYZtoken_CONTRACT_ADDRESS ="0x57d4d07F305e76c551b1ff023aabF190074A4698";
+module.exports = { XYZtoken_CONTRACT_ADDRESS };
