@@ -55,7 +55,7 @@ export default function Home() {
   const fetchAllProposals = async () => {
     try {
       const proposals = [];
-      for (let i = 0; i <=numProposals; i++) {
+      for (let i = 0; i < numProposals; i++) {
         const proposal = await fetchProposalById(i);
         proposals.push(proposal);
       }
@@ -111,15 +111,15 @@ export default function Home() {
       );
     } else {
       return (
-        <div>
+        <div className={styles.proposalContainer}>
           {proposals.map((p, index) => (
             <div key={index} className={styles.proposalCard}>
-              <p>Proposal ID: {p.proposalId}</p>
-              <p>TokenId to Invest in: {p.TokenId}</p>
-              <p>Deadline: {p.deadline.toLocaleString()}</p>
-              <p>Yay Votes: {p.yayVotes}</p>
-              <p>Nay Votes: {p.nayVotes}</p>
-              <p>Executed?: {p.executed.toString()}</p>
+               <p className={styles.proposalEntries}>Proposal ID: {p.proposalId}</p>
+              <p className={styles.proposalEntries}>TokenId to Invest in: {p.TokenId}</p>
+              <p className={styles.proposalEntries}>Deadline: {p.deadline.toLocaleString()}</p>
+              <p className={styles.proposalEntries}>Yay Votes: {p.yayVotes}</p>
+              <p className={styles.proposalEntries}>Nay Votes: {p.nayVotes}</p>
+              <p className={styles.proposalEntries}>Executed?: {p.executed.toString()}</p>
               {p.deadline.getTime() > Date.now() && !p.executed ? (
                 <div className={styles.flex}>
                   <button
@@ -138,15 +138,14 @@ export default function Home() {
               ) : p.deadline.getTime() < Date.now() && !p.executed ? (
                 <div className={styles.flex}>
                   <button
-                    className={styles.button2}
-                    onClick={() => executeProposal(p.proposalId)}
-                  >
+                    className={styles.ExecutePropButton}
+                    onClick={() => executeProposal(p.proposalId)}>
                     Execute Proposal{" "}
                     {p.yayVotes > p.nayVotes ? "(YAY)" : "(NAY)"}
                   </button>
                 </div>
               ) : (
-                <div className={styles.description}>Proposal Executed</div>
+                <div className={styles.ExecutePropButton}>Proposal Executed</div>
               )}
             </div>
           ))}
