@@ -18,7 +18,7 @@ export default function Home() {
       //
     //
   const [treasuryBalance, setTreasuryBalance] = useState("0");
-  const [numProposals, setNumProposals] = useState("0");
+  const [numProposals, setNumProposals] = useState(0);
   const [TokenId, setTokenId] = useState("");
   const [loading, setLoading] = useState(false);
   const [walletConnected, setWalletConnected] = useState(false);
@@ -27,6 +27,10 @@ export default function Home() {
   const [proposals, setProposals] = useState([]);
   //
   //
+  useEffect(() => {
+    fetchAllProposals();
+  });
+  
   const fetchProposalById = async (id) => {
     try {
       const provider = await getProviderOrSigner();
@@ -51,7 +55,7 @@ export default function Home() {
   const fetchAllProposals = async () => {
     try {
       const proposals = [];
-      for (let i = 0; i < numProposals; i++) {
+      for (let i = 0; i <=numProposals; i++) {
         const proposal = await fetchProposalById(i);
         proposals.push(proposal);
       }
@@ -187,7 +191,7 @@ export default function Home() {
       const provider = await getProviderOrSigner();
       const contract = getDaoContractInstance(provider);
       const daoNumProposals = await contract.numProposals();
-      setNumProposals(daoNumProposals.toString());
+      setNumProposals(daoNumProposals.toNumber());
     } catch (error) {
       console.error(error);
     }
@@ -245,7 +249,7 @@ export default function Home() {
             getDAOTreasuryBalance();
             getNumProposalsInDAO();
             getBalanceOfXYZTokens();
-            fetchAllProposals();
+            
           });
         }
     }, [walletConnected]);
